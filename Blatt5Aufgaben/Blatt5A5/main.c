@@ -9,5 +9,5 @@ int main() {
         rzk[i] = zk[strlen(zk) -(i + 1)];
     }
     printf("Deine Zeichenkette war: %s\n", zk);
-    printf("Dein Palyndrom ist: %s\n", rzk);
+    printf("Deine umgekehrte Zeichenkette ist: %s\n", rzk);
 }

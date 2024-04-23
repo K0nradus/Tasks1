@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/Blatt5A5.dir/main.c.o -o Blatt5A5 
