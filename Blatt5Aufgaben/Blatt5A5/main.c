@@ -6,7 +6,7 @@ int main() {
     printf("Bitte geben sie eine Zeichenkette ein:\n");
     gets(zk);
     for(i = 0; i <= strlen(zk); i++){
-        rzk[i] = zk[strlen(zk) -(i + 1)];
+        rzk[i] = zk[strlen(zk) - (i + 1)];
     }
     printf("Deine Zeichenkette war: %s\n", zk);
     printf("Deine umgekehrte Zeichenkette ist: %s\n", rzk);
