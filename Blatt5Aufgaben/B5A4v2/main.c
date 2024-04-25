@@ -30,4 +30,3 @@ int main() {
         printf("Die Ketten sind ungleich!");
     }
 }
-
