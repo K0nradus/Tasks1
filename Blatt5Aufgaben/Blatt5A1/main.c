@@ -17,10 +17,7 @@ int main() {
         } else {
             sum_odd = sum_odd + rlist[j];
         }
-
-
     }
     printf("Gerade Zahlen aufaddiert ergibt: %llu\n", sum_even);
     printf("Ungerade Zahlen aufaddiert ergibt: %llu ", sum_odd);
-
 }

@@ -9,9 +9,7 @@ int main() {
             fn = f1 + f2;
             f1 = f2;
             f2 = fn;
-            printf("f_%i %d fq = %lf \n",i+1 , fn, (double) fn/f1);
-
+            printf("f_%i %d fq = %.15lf \n",i+1 , fn, (double) fn/f1);
         }
-
     }
 }

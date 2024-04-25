@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/martin/ProgrammierBlaetter/Blatt4A3/cmake-build-debug",
-		"source" : "/home/martin/ProgrammierBlaetter/Blatt4A3"
+		"build" : "/home/martin/gitrepos/Tasks1/Blatt4Aufgaben/Blatt4A3/cmake-build-debug",
+		"source" : "/home/martin/gitrepos/Tasks1/Blatt4Aufgaben/Blatt4A3"
 	},
 	"version" : 
 	{
