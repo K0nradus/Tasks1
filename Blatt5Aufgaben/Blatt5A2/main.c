@@ -4,7 +4,7 @@
 int main() {
     srand(time(0));
     int rlist[100], dlist[51];
-    int i, j, k = 0, mult = 0, l = 0, m = 0, o;
+    int i, j, k = 0, mult = 0, m = 0, o;
     for(i = 0; i < 100; i++){
         rlist[i] = rand() % 51;
         printf("%i\t", rlist[i]);

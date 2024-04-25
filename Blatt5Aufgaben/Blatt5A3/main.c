@@ -8,6 +8,6 @@ int main() {
     while(zk[i] != '\0') {
         i++;
     }
-    printf("%i\t%i mit der Null\n", i, i+1);
+    printf("%i und %i mit der Null\n", i, i+1);
     printf("%i", strlen(zk));
 }

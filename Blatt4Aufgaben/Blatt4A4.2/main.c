@@ -8,12 +8,12 @@ int main() {
     do {
         xn = ((x0 + A/x0) / 2);
         if(fabs(xn - x0) <= 0.000001){
-            printf("x%i = %.10Lf\n", i + 1, xn);
+            printf("x%i = %.15Lf\n", i + 1, xn);
             break;
         }
         x0 = xn;
         i++;
-        printf("x%i = %.10Lf\n", i, xn);
+        printf("x%i = %.15Lf\n", i, xn);
     } while (i < 100);
 
 }
