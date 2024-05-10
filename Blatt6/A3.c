@@ -1,8 +1,13 @@
 #include <stdio.h>
-#include <string.h>
-int main(void) {
-    char zk[100];
-    printf("Bitte geben sie eine Zeichenkette ein:\n");
+#include <stdlib.h>
+int main() {
+    int z = 0;
+    char *zk = (char *)malloc(200);
+    printf("Geben sie eine Zeichenkette ein:\n");
     gets(zk);
-
+    for(;*zk != '\0';){
+        z++;
+        zk++;
+    }
+    printf("Deine Zeichenkette ist %d Zeichen lang.", z);
 }
