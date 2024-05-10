@@ -7,4 +7,6 @@ add_executable(Blatt6 main.c
         A1.2.c
         A2.c
         A3.c
-        A4.c)
+        A4.c
+        A5.c
+        A6.c)

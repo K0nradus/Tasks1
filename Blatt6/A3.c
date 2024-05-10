@@ -10,4 +10,5 @@ int main() {
         zk++;
     }
     printf("Deine Zeichenkette ist %d Zeichen lang.", z);
+    return 0;
 }
