@@ -1,12 +1,11 @@
 #include <stdio.h>
 
-int hoch2(int n){
-    return n * n;
+int hoch2(int i){
+    return i * i;
 }
 int main(){
-    int n;
-    printf("Bitte geben sie eine Ganzzahl ein:\n");
-    scanf("%d", &n);
-    printf("Deine Quadratzahl ist %d.", hoch2(n));
+    for ( int i = 0 ; i < 20 ; i ++) {
+        printf( "hoch2(%i) = %i \n" , i , hoch2 (i )) ;
+    }
     return 0;
 }

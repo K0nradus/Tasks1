@@ -8,13 +8,12 @@ int main(void) {
     printf("Bitte geben sie eine zweite Zeichenkette ein:\n");
     gets(zk2);
     for(int i = 0; zk1[i] != '\0'; i++){
-        zkcat[j] = zk1[i];
         j++;
     }
    for(int i = 0; zk2[i] != '\0'; i++){
-       zkcat[j] = zk2[i];
+       zk1[j] = zk2[i];
        j++;
    }
-    printf("%s", zkcat);
+    printf("%s", zk1);
    return 0;
 }
