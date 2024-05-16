@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-int main(void) {
+int main() {
     char zk1[100], zk2[100];
     printf("Bitte geben sie eine Zeichenkette ein:\n");
     gets(zk1);

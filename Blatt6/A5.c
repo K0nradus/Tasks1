@@ -7,5 +7,6 @@ int main(){
     int n;
     printf("Bitte geben sie eine Ganzzahl ein:\n");
     scanf("%d", &n);
-    printf("Deine Quadratzahl ist %d", hoch2(n));
+    printf("Deine Quadratzahl ist %d.", hoch2(n));
+    return 0;
 }

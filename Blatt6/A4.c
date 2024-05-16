@@ -9,7 +9,7 @@ int main() {
             *fz = f1 + f2;
             f2 = f1;
             f1 = *fz;
-            printf("f(%d) = %li\n", i, *fz);
+            printf("f(%d) = %li\n", i+1, *fz);
             fz++;
         }
     return 0;
