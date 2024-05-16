@@ -8,18 +8,18 @@ void zp(int a, int b) {
     }else {
         for(int i = 0; i < 31; i++){
             zweipotenz[i] = pow(2,i);
-            }
         }
-        for(int i = 0; i < 31; i++){
-            if(zweipotenz[i] >= a){
-                j = i;
-                break;
-            }
+    }
+    for(int i = 0; i < 31; i++){
+        if(zweipotenz[i] >= a){
+            j = i;
+            break;
         }
-        for(; zweipotenz[j]>= a && zweipotenz[j] <= b;){
-            printf("%d\n", zweipotenz[j]);
-            j++;
-        }
+    }
+    for(; zweipotenz[j]>= a && zweipotenz[j] <= b;){
+        printf("%d\n", zweipotenz[j]);
+        j++;
+    }
     if(h == 0){
         printf("Kein gueltiger Intervall!\n");
     }
