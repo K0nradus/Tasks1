@@ -61,6 +61,36 @@ build CMakeFiles/Blatt7.dir/A2.c.o: C_COMPILER__Blatt7_unscanned_Debug /home/mar
   OBJECT_DIR = CMakeFiles/Blatt7.dir
   OBJECT_FILE_DIR = CMakeFiles/Blatt7.dir
 
+build CMakeFiles/Blatt7.dir/A3.c.o: C_COMPILER__Blatt7_unscanned_Debug /home/martin/gitrepos/Tasks1/Blatt7/A3.c || cmake_object_order_depends_target_Blatt7
+  DEP_FILE = CMakeFiles/Blatt7.dir/A3.c.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/Blatt7.dir
+  OBJECT_FILE_DIR = CMakeFiles/Blatt7.dir
+
+build CMakeFiles/Blatt7.dir/A4.c.o: C_COMPILER__Blatt7_unscanned_Debug /home/martin/gitrepos/Tasks1/Blatt7/A4.c || cmake_object_order_depends_target_Blatt7
+  DEP_FILE = CMakeFiles/Blatt7.dir/A4.c.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/Blatt7.dir
+  OBJECT_FILE_DIR = CMakeFiles/Blatt7.dir
+
+build CMakeFiles/Blatt7.dir/A4.2.c.o: C_COMPILER__Blatt7_unscanned_Debug /home/martin/gitrepos/Tasks1/Blatt7/A4.2.c || cmake_object_order_depends_target_Blatt7
+  DEP_FILE = CMakeFiles/Blatt7.dir/A4.2.c.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/Blatt7.dir
+  OBJECT_FILE_DIR = CMakeFiles/Blatt7.dir
+
+build CMakeFiles/Blatt7.dir/A5.c.o: C_COMPILER__Blatt7_unscanned_Debug /home/martin/gitrepos/Tasks1/Blatt7/A5.c || cmake_object_order_depends_target_Blatt7
+  DEP_FILE = CMakeFiles/Blatt7.dir/A5.c.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/Blatt7.dir
+  OBJECT_FILE_DIR = CMakeFiles/Blatt7.dir
+
+build CMakeFiles/Blatt7.dir/A6.c.o: C_COMPILER__Blatt7_unscanned_Debug /home/martin/gitrepos/Tasks1/Blatt7/A6.c || cmake_object_order_depends_target_Blatt7
+  DEP_FILE = CMakeFiles/Blatt7.dir/A6.c.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/Blatt7.dir
+  OBJECT_FILE_DIR = CMakeFiles/Blatt7.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Blatt7
@@ -69,7 +99,7 @@ build CMakeFiles/Blatt7.dir/A2.c.o: C_COMPILER__Blatt7_unscanned_Debug /home/mar
 #############################################
 # Link the executable Blatt7
 
-build Blatt7: C_EXECUTABLE_LINKER__Blatt7_Debug CMakeFiles/Blatt7.dir/main.c.o CMakeFiles/Blatt7.dir/A2.c.o
+build Blatt7: C_EXECUTABLE_LINKER__Blatt7_Debug CMakeFiles/Blatt7.dir/main.c.o CMakeFiles/Blatt7.dir/A2.c.o CMakeFiles/Blatt7.dir/A3.c.o CMakeFiles/Blatt7.dir/A4.c.o CMakeFiles/Blatt7.dir/A4.2.c.o CMakeFiles/Blatt7.dir/A5.c.o CMakeFiles/Blatt7.dir/A6.c.o
   FLAGS = -g
   LINK_LIBRARIES = -lm
   OBJECT_DIR = CMakeFiles/Blatt7.dir

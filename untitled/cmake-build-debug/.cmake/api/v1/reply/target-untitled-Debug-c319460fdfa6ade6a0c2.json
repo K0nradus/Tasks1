@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Blatt7"
+			"path" : "untitled"
 		}
 	],
 	"backtrace" : 1,
@@ -10,8 +10,7 @@
 	{
 		"commands" : 
 		[
-			"add_executable",
-			"target_link_libraries"
+			"add_executable"
 		],
 		"files" : 
 		[
@@ -26,12 +25,6 @@
 				"command" : 0,
 				"file" : 0,
 				"line" : 6,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -56,12 +49,11 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
-	"id" : "Blatt7::@6890427a1f51a3e7e1df",
+	"id" : "untitled::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -73,17 +65,12 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "-lm",
-				"role" : "libraries"
 			}
 		],
 		"language" : "C"
 	},
-	"name" : "Blatt7",
-	"nameOnDisk" : "Blatt7",
+	"name" : "untitled",
+	"nameOnDisk" : "untitled",
 	"paths" : 
 	{
 		"build" : ".",
@@ -95,8 +82,7 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
@@ -106,12 +92,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "main.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "A2.c",
 			"sourceGroupIndex" : 0
 		}
 	],
