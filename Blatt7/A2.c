@@ -24,7 +24,7 @@ int main() {
     printf("Bitte geben sie eine weitere Ganzzahl ein:\n");
     scanf("%d", &z2);
     printf("Bitte geben sie einen Rechenoperator ein:\n");
-    scanf("%c", &op);
+    scanf(" %c", &op);
     printf("%i", berechne(op,z1,z2));
 }
 

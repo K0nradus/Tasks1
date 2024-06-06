@@ -6,4 +6,7 @@ set(CMAKE_C_STANDARD 11)
 add_executable(Blatt8 main.c
         A2.c
         A3.c
-        A4.c)
+        A4.c
+        A4.cpp
+        A4.cpp
+        A5.c)

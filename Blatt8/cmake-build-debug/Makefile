@@ -201,6 +201,30 @@ A4.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Blatt8.dir/build.make CMakeFiles/Blatt8.dir/A4.c.s
 .PHONY : A4.c.s
 
+A5.o: A5.c.o
+.PHONY : A5.o
+
+# target to build an object file
+A5.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Blatt8.dir/build.make CMakeFiles/Blatt8.dir/A5.c.o
+.PHONY : A5.c.o
+
+A5.i: A5.c.i
+.PHONY : A5.i
+
+# target to preprocess a source file
+A5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Blatt8.dir/build.make CMakeFiles/Blatt8.dir/A5.c.i
+.PHONY : A5.c.i
+
+A5.s: A5.c.s
+.PHONY : A5.s
+
+# target to generate assembly for a file
+A5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Blatt8.dir/build.make CMakeFiles/Blatt8.dir/A5.c.s
+.PHONY : A5.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -243,6 +267,9 @@ help:
 	@echo "... A4.o"
 	@echo "... A4.i"
 	@echo "... A4.s"
+	@echo "... A5.o"
+	@echo "... A5.i"
+	@echo "... A5.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

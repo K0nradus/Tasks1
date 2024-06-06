@@ -21,18 +21,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62c9dd20-e2af-42e0-8fbc-ad88ec1bcb8a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Blatt8/A4.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-42493937df3107d3d4ed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-d309a887fc0aad4c675c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-05-26T15-20-00-0401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Blatt7.dir/main.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2" beforeDir="false" afterPath="$PROJECT_DIR$/A2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2.c" beforeDir="false" afterPath="$PROJECT_DIR$/A2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A5" beforeDir="false" afterPath="$PROJECT_DIR$/A5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A5.c" beforeDir="false" afterPath="$PROJECT_DIR$/A5.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A6" beforeDir="false" afterPath="$PROJECT_DIR$/A6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A6.c" beforeDir="false" afterPath="$PROJECT_DIR$/A6.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Blatt8/A3" beforeDir="false" afterPath="$PROJECT_DIR$/../Blatt8/A3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Blatt8/A3.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Blatt8/A3.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Blatt8/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Blatt8/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Blatt8/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-5d4e4e2cb03f0ef473bd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Blatt8/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-9bb34b867341028687e6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Blatt8/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-06T10-33-01-0083.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Blatt8/cmake-build-debug/.cmake/api/v1/reply/target-Blatt8-Debug-cd8350e23cedf0d9a286.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Blatt8/cmake-build-debug/Blatt8.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../Blatt8/cmake-build-debug/Blatt8.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Blatt8/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Blatt8/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Blatt8/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Blatt8/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,35 +78,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "C/C++ File.A2.c.executor": "Run",
-    "C/C++ File.A3.c.executor": "Run",
-    "C/C++ File.A4.c.executor": "Run",
-    "C/C++ File.A5.c.executor": "Run",
-    "C/C++ File.A6.c.executor": "Run",
-    "CMake Application.Blatt7.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/martin/gitrepos/Tasks1/Blatt8",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C/C++ File.A2.c.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.A3.c.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.A4.2.c.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.A4.c.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.A5.c.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.A6.c.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.main.c.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.Blatt7.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/martin/gitrepos/Tasks1/Blatt7/A5.c&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C/C++ File.A6.c">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Blatt7" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Blatt7" TARGET_NAME="Blatt7" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Blatt7" RUN_TARGET_NAME="Blatt7">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -118,17 +121,45 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="A4.2.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Blatt7" TARGET_NAME="A4.2.c" CONFIG_NAME="A4.2.c">
+      <option name="sourceFile" value="$PROJECT_DIR$/A4.2.c" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="A4.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Blatt7" TARGET_NAME="A4.c" CONFIG_NAME="A4.c">
+      <option name="sourceFile" value="$PROJECT_DIR$/A4.c" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="A5.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Blatt7" TARGET_NAME="A5.c" CONFIG_NAME="A5.c">
+      <option name="sourceFile" value="$PROJECT_DIR$/A5.c" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="A6.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Blatt7" TARGET_NAME="A6.c" CONFIG_NAME="A6.c">
       <option name="sourceFile" value="$PROJECT_DIR$/A6.c" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Blatt7" TARGET_NAME="main.c" CONFIG_NAME="main.c">
+      <option name="sourceFile" value="$PROJECT_DIR$/main.c" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="CMake Application.Blatt7" />
       <item itemvalue="C/C++ File.A2.c" />
       <item itemvalue="C/C++ File.A3.c" />
+      <item itemvalue="C/C++ File.A4.2.c" />
+      <item itemvalue="C/C++ File.A4.c" />
+      <item itemvalue="C/C++ File.A5.c" />
       <item itemvalue="C/C++ File.A6.c" />
-      <item itemvalue="CMake Application.Blatt7" />
+      <item itemvalue="C/C++ File.main.c" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -143,6 +174,8 @@
       <workItem from="1716726456996" duration="11333000" />
       <workItem from="1717669923664" duration="2000" />
       <workItem from="1717669960172" duration="16000" />
+      <workItem from="1717681040451" duration="3711000" />
+      <workItem from="1717685206229" duration="4000" />
     </task>
     <servers />
   </component>

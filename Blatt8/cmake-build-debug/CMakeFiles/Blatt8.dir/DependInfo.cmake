@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/martin/gitrepos/Tasks1/Blatt8/A2.c" "CMakeFiles/Blatt8.dir/A2.c.o" "gcc" "CMakeFiles/Blatt8.dir/A2.c.o.d"
   "/home/martin/gitrepos/Tasks1/Blatt8/A3.c" "CMakeFiles/Blatt8.dir/A3.c.o" "gcc" "CMakeFiles/Blatt8.dir/A3.c.o.d"
   "/home/martin/gitrepos/Tasks1/Blatt8/A4.c" "CMakeFiles/Blatt8.dir/A4.c.o" "gcc" "CMakeFiles/Blatt8.dir/A4.c.o.d"
+  "/home/martin/gitrepos/Tasks1/Blatt8/A5.c" "CMakeFiles/Blatt8.dir/A5.c.o" "gcc" "CMakeFiles/Blatt8.dir/A5.c.o.d"
   "/home/martin/gitrepos/Tasks1/Blatt8/main.c" "CMakeFiles/Blatt8.dir/main.c.o" "gcc" "CMakeFiles/Blatt8.dir/main.c.o.d"
   )
 

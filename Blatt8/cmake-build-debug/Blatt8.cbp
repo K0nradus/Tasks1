@@ -85,6 +85,12 @@
 		<Unit filename="/home/martin/gitrepos/Tasks1/Blatt8/A4.c">
 			<Option target="Blatt8"/>
 		</Unit>
+		<Unit filename="/home/martin/gitrepos/Tasks1/Blatt8/A4.cpp">
+			<Option target="Blatt8"/>
+		</Unit>
+		<Unit filename="/home/martin/gitrepos/Tasks1/Blatt8/A5.c">
+			<Option target="Blatt8"/>
+		</Unit>
 		<Unit filename="/home/martin/gitrepos/Tasks1/Blatt8/main.c">
 			<Option target="Blatt8"/>
 		</Unit>

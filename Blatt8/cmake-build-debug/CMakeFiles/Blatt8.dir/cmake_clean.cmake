@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Blatt8.dir/A3.c.o.d"
   "CMakeFiles/Blatt8.dir/A4.c.o"
   "CMakeFiles/Blatt8.dir/A4.c.o.d"
+  "CMakeFiles/Blatt8.dir/A5.c.o"
+  "CMakeFiles/Blatt8.dir/A5.c.o.d"
   "CMakeFiles/Blatt8.dir/main.c.o"
   "CMakeFiles/Blatt8.dir/main.c.o.d"
 )
