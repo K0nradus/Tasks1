@@ -1,6 +1,6 @@
 #include <stdio.h>
 int vorkommen(const char* s, const char* m){
-    int laengem = 0, counter = 0, j = 0, isreal= 0;
+    int laengem = 0, counter = 0,  j =0, isreal= 0;
     for(int i = 0; m[i] != '\0'; i++){
         laengem++;
     }
@@ -23,9 +23,9 @@ int vorkommen(const char* s, const char* m){
 }
 int main() {
     char zk1[100], zk2[100];
-    printf("bitte geben sie eine Zeichenkette ein: \n");
+    printf("Bitte geben Sie eine Zeichenkette ein: \n");
     gets(zk1);
-    printf("bitte geben sie eine weitere Zeichenkette ein: \n");
+    printf("Bitte geben Sie eine weitere Zeichenkette ein: \n");
     gets(zk2);
-    printf("deine zweite Zeichenkette kommt %d mal vor!",vorkommen(zk1,zk2));
+    printf("Ihre zweite Zeichenkette kommt %d mal vor!",vorkommen(zk1,zk2));
 }
