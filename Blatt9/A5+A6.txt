@@ -1,0 +1,6 @@
+1.E:/GitRepos/Tasks1/B9A6.1/klammerung1.cpp:30: undefined reference to `empty(char*)'
+2.E:/GitRepos/Tasks1/B9A6.1/stack.cpp:7: multiple definition of `empty(char*)'; CMakeFiles/B9A6_1.dir/klammerung1.cpp.obj:E:/GitRepos/Tasks1/B9A6.1/klammerung1.cpp:3: first defined here
+3.cc1plus.exe: fatal error: E:/GitRepos/Tasks1/B9A6.1/klammerung1.cpp: No such file or directory
+4.E:/GitRepos/Tasks1/B9A6.1/klammerung1.cpp:7:5: error: 'clear' was not declared in this scope
+5.E:/GitRepos/Tasks1/B9A6.1/klammerung1.cpp:30:34: error: invalid conversion from 'char*' to 'char' [-fpermissive]
+6.E:/GitRepos/Tasks1/B9A6.1/klammerung1.cpp:20:17: error: 'pop' was not declared in this scope; did you mean 'top'?
