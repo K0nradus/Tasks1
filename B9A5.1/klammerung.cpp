@@ -1,4 +1,5 @@
-#include <iostream>
+
+#include <cstdio>
 #include "stack.h"
 int main(){
     char bracketString[100], Stack[100] = {'\0'};
@@ -6,7 +7,7 @@ int main(){
     char bracket;
     clear(Stack);
     printf("Bitte geben sie eine Kette mit nur diesen Zeichen ein: ( [ { } ] ):\n");
-    gets(bracketString);
+    scanf(" %s", bracketString);
     for(int i = 0; bracketString[i] != '\0';i++){
         if(bracketString[i] != '(' && bracketString[i] != '[' && bracketString[i] != '{'
            && bracketString[i] != ')' && bracketString[i] != ']' && bracketString[i] != '}'){

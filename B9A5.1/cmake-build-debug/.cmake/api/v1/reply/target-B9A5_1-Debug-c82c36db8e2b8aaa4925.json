@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "B9A5_1.exe"
-		},
-		{
-			"path" : "B9A5_1.pdb"
+			"path" : "B9A5_1"
 		}
 	],
 	"backtrace" : 1,
@@ -69,16 +66,12 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "B9A5_1",
-	"nameOnDisk" : "B9A5_1.exe",
+	"nameOnDisk" : "B9A5_1",
 	"paths" : 
 	{
 		"build" : ".",

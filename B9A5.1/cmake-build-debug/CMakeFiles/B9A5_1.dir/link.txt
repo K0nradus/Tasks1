@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/B9A5_1.dir/klammerung.cpp.o CMakeFiles/B9A5_1.dir/stack.cpp.o -o B9A5_1 
