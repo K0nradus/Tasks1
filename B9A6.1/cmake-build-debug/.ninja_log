@@ -1,21 +1,6 @@
 # ninja log v5
-4	85	7394931900179995	CMakeFiles/B9A6_1.dir/stack.cpp.obj	b3e6f2fe3c1841cf
-1	732	7394931906665874	CMakeFiles/B9A6_1.dir/main.cpp.obj	de4ba68f8944b25e
-733	871	7394931908047135	B9A6_1.exe	3f601e51f3fa548b
-1	197	7394932679316070	build.ninja	2b8bb53d7852f669
-4	60	7394932680727343	CMakeFiles/B9A6_1.dir/stack.cpp.obj	b3e6f2fe3c1841cf
-2	332	7394932683459821	CMakeFiles/B9A6_1.dir/klammerung1.cpp.obj	c10a2b3d46f30fe
-332	416	7394932684280564	B9A6_1.exe	d1fd12c52c0db2c0
-3	59	7394933155319606	CMakeFiles/B9A6_1.dir/stack.cpp.obj	b3e6f2fe3c1841cf
-3	73	7394935972454579	CMakeFiles/B9A6_1.dir/stack.cpp.obj	b3e6f2fe3c1841cf
-6	345	7394935975181890	CMakeFiles/B9A6_1.dir/klammerung1.cpp.obj	c10a2b3d46f30fe
-3	313	7394936664659208	CMakeFiles/B9A6_1.dir/klammerung1.cpp.obj	c10a2b3d46f30fe
-3639	3723	7394936698732881	B9A6_1.exe	d1fd12c52c0db2c0
-5	122	7394938895458030	CMakeFiles/B9A6_1.dir/stack.cpp.obj	b3e6f2fe3c1841cf
-3	343	7394938897670026	CMakeFiles/B9A6_1.dir/klammerung1.cpp.obj	c10a2b3d46f30fe
-343	428	7394938898510796	B9A6_1.exe	d1fd12c52c0db2c0
-5	62	7394939027699851	CMakeFiles/B9A6_1.dir/stack.cpp.obj	b3e6f2fe3c1841cf
-3	60	7394939474562890	CMakeFiles/B9A6_1.dir/stack.cpp.obj	b3e6f2fe3c1841cf
 3	62	7394939884843683	CMakeFiles/B9A6_1.dir/stack.cpp.obj	b3e6f2fe3c1841cf
-6	820	7394939892420553	CMakeFiles/B9A6_1.dir/klammerung1.cpp.obj	c10a2b3d46f30fe
+1	732	7394931906665874	CMakeFiles/B9A6_1.dir/main.cpp.obj	de4ba68f8944b25e
 820	903	7394939893241301	B9A6_1.exe	d1fd12c52c0db2c0
+1	197	7399961958014734	build.ninja	2b8bb53d7852f669
+6	820	7394939892420553	CMakeFiles/B9A6_1.dir/klammerung1.cpp.obj	c10a2b3d46f30fe
