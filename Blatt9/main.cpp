@@ -29,5 +29,5 @@ int main() {
     printf("Ihr Skalarprodukt lautet     : %lf\n", skalarProdukt(vectorOne,vectorTwo));
     printf("Ihr addierter Vektor lautet  : %f, %f\n", vectorAdded.x, vectorAdded.y);
     printf("Ihr Kreuzprodukt lautet      : %f, %f\n", crossVector.x, crossVector.y);
-    printf("Ihr sklaierter Vektor lautet : %f, %f\n", vectorScaled.x, vectorScaled.y);
+    printf("Ihr skalierter Vektor lautet : %f, %f\n", vectorScaled.x, vectorScaled.y);
 }
