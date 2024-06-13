@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/Blatt8.dir/main.c.o CMakeFiles/Blatt8.dir/A2.c.o CMakeFiles/Blatt8.dir/A3.c.o CMakeFiles/Blatt8.dir/A4.c.o CMakeFiles/Blatt8.dir/A5.c.o -o Blatt8 
