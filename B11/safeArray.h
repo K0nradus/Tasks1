@@ -8,7 +8,7 @@ public:
     int getMin();
     bool fill(unsigned int,unsigned int, int);
     safe_array(int n){
-        for(int i = 0; i < 100; i++){
+        for(int i = 0; i < 10; i++){
             array[i] = n;
         }
     }
