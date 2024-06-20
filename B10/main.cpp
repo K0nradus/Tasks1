@@ -17,14 +17,14 @@ void findBirthdate(const char* vn, const char* n, int pz){
     int proofCounter = 0;
     importantPerson[0] = {"Einstein","Albert",14, 1879, datum::mar};
     importantPerson[1] = {"Newton","Isaac",25, 1643, datum::dec};
-    importantPerson[2] = {"Leibniz","Gottfried Wilhelm",21, 1646, datum::jne};
-    importantPerson[3] = {"Bach","Johann Sebastian",21, 1685, datum::mar};
-    importantPerson[4] = {"Mozart","Wolfgang Amadeus",27, 1756, datum::jan};
+    importantPerson[2] = {"Leibniz","Gottfried",21, 1646, datum::jne};
+    importantPerson[3] = {"Bach","Sebastian",21, 1685, datum::mar};
+    importantPerson[4] = {"Mozart","Amadeus",27, 1756, datum::jan};
     for(int i = 0; i < pz ;i++){
         if(strcmp(vn, importantPerson[i].vorname) == 0 && strcmp(n, importantPerson[i].name)== 0) {
             cout << importantPerson[i].vorname << " " << importantPerson[i].name << " wurde am "
                  << importantPerson[i].birthday.day
-                 << "." << importantPerson[i].birthday.month << "." << importantPerson[i].birthday.year << " geboren" << endl;
+                 << "." << importantPerson[i].birthday.month << "." << importantPerson[i].birthday.year << " geboren." << endl;
         }
         else{
             proofCounter++;

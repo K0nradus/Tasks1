@@ -163,7 +163,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-j16"
+			"value" : "-j8"
 		},
 		{
 			"name" : "CMAKE_COLOR_DIAGNOSTICS",
@@ -187,7 +187,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/282/bin/cmake/linux/x64/bin/cmake"
+			"value" : "/snap/clion/284/bin/cmake/linux/x64/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -199,7 +199,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/282/bin/cmake/linux/x64/bin/cpack"
+			"value" : "/snap/clion/284/bin/cmake/linux/x64/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -211,7 +211,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/282/bin/cmake/linux/x64/bin/ctest"
+			"value" : "/snap/clion/284/bin/cmake/linux/x64/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -1011,7 +1011,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/282/bin/cmake/linux/x64/share/cmake-3.28"
+			"value" : "/snap/clion/284/bin/cmake/linux/x64/share/cmake-3.28"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
