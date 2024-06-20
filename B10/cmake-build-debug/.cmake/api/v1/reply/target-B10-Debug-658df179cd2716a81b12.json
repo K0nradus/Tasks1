@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "B10"
+			"path" : "B10.exe"
+		},
+		{
+			"path" : "B10.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -66,12 +69,16 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "B10",
-	"nameOnDisk" : "B10",
+	"nameOnDisk" : "B10.exe",
 	"paths" : 
 	{
 		"build" : ".",

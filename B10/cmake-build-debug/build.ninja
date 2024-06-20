@@ -57,6 +57,14 @@ build CMakeFiles/B10.dir/main.cpp.obj: CXX_COMPILER__B10_unscanned_Debug E$:/Git
   TARGET_COMPILE_PDB = CMakeFiles\B10.dir\
   TARGET_PDB = B10.pdb
 
+build CMakeFiles/B10.dir/A2.cpp.obj: CXX_COMPILER__B10_unscanned_Debug E$:/GitRepos/Tasks1/B10/A2.cpp || cmake_object_order_depends_target_B10
+  DEP_FILE = CMakeFiles\B10.dir\A2.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\B10.dir
+  OBJECT_FILE_DIR = CMakeFiles\B10.dir
+  TARGET_COMPILE_PDB = CMakeFiles\B10.dir\
+  TARGET_PDB = B10.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target B10
@@ -65,7 +73,7 @@ build CMakeFiles/B10.dir/main.cpp.obj: CXX_COMPILER__B10_unscanned_Debug E$:/Git
 #############################################
 # Link the executable B10.exe
 
-build B10.exe: CXX_EXECUTABLE_LINKER__B10_Debug CMakeFiles/B10.dir/main.cpp.obj
+build B10.exe: CXX_EXECUTABLE_LINKER__B10_Debug CMakeFiles/B10.dir/main.cpp.obj CMakeFiles/B10.dir/A2.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\B10.dir
