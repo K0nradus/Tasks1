@@ -1,4 +1,26 @@
 #include "safeArray.h"
+
+void safe_array::arrayEnlarger(unsigned int newsize){
+     safe_array EnlargedArray = safe_array(newsize);
+     for(int i = 0; i < arraySize;i++){
+         if(array[i] != defaultValue){
+             EnlargedArray.setAt(i,array[i]);
+         }
+     }
+     array = EnlargedArray.array;
+     arraySize = newsize;
+}
+
+unsigned int safe_array::length() {
+    unsigned int isdefault = 0;
+    for(int i = 0; i < arraySize;i++){
+        if(array[i] == defaultValue){
+            isdefault++;
+        }
+    }
+    return isdefault;
+}
+
 bool safe_array::fill(unsigned int pos1, unsigned int pos2, int value){
     if(pos1 <= pos2 && pos2 < 100){
         for(;pos1 <= pos2; pos1++){
@@ -10,19 +32,23 @@ bool safe_array::fill(unsigned int pos1, unsigned int pos2, int value){
     }
 
 }
+
 int safe_array::getAt(unsigned int pos){
-    if(pos < 100){
+
+    if(pos < arraySize){
         return array[pos];
     }else{
-        return -1;
+        arrayEnlarger(pos);
+        return array[pos];
     }
 }
-bool safe_array::setAt(unsigned int pos, int val){
-    if(pos < 100){
+
+void safe_array::setAt(unsigned int pos, int val){
+    if(pos < arraySize){
         array[pos] = val;
-        return true;
     }else{
-        return false;
+        arrayEnlarger(pos+1);
+        array[pos] = val;
     }
 }
 int safe_array::getMin() {

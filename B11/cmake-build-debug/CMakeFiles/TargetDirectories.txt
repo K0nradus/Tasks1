@@ -1,3 +1,3 @@
-/home/martin/gitrepos/Tasks1/B11/cmake-build-debug/CMakeFiles/B11.dir
-/home/martin/gitrepos/Tasks1/B11/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/martin/gitrepos/Tasks1/B11/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/GitRepos/Tasks1/B11/cmake-build-debug/CMakeFiles/B11.dir
+E:/GitRepos/Tasks1/B11/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/GitRepos/Tasks1/B11/cmake-build-debug/CMakeFiles/rebuild_cache.dir
