@@ -5,21 +5,28 @@
 
 using namespace std;
 
-bool zerlegeFeld(string eingabe, int& y, int& x) {
-    /* Zulässiges Feld?
-     * - Genau zwei Zeichen?
-     * - Erstes Zeichen 'A' ... 'C'?
-     * - Zweites Zeichen: '1' ... '3'?
-     */
-    if (eingabe.length()==2 &&
-        ('A' <= eingabe[0] && eingabe[0] <= 'C') &&
-        ('1' <= eingabe[1] && eingabe[1] <= '3')) {
-        /* Koordinaten extrahieren */
-        x = eingabe[0] - 'A';
-        y = eingabe[1] - '1';
+bool zerlegeFeld(string eingabe, int& y, int& x){
+    int index = 0;
+    int counterUpperCharacter = 0;
+    int counterNumber = 0;
+    int counterLowerCharacter = 0;
+    while(eingabe[index] != '\0'){
+        if(('A' <= eingabe[index] && eingabe[index] <= 'C')){
+            counterUpperCharacter++;
+            x = eingabe[index] - 'A';
+        } else if('1' <= eingabe[index] && eingabe[index] <= '3'){
+            counterNumber++;
+            y = eingabe[index] - '1';
+        } else if('a' <= eingabe[index] && eingabe[index]<= 'c'){
+            counterLowerCharacter++;
+            x = eingabe[index] - 'a';
+        }
+        index++;
+    }
+    if(counterNumber != 1 || (counterLowerCharacter + counterUpperCharacter) != 1){
+            return false;
+        } else {
         return true;
-    } else {
-        return false;
     }
 }
 

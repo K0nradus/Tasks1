@@ -1,0 +1,12 @@
+# ninja log v5
+0	2757	7436395711452579	CMakeFiles/tictactoe.dir/main.cpp.obj	d417d7d7d0b49312
+4	2760	7436395711492617	CMakeFiles/tictactoe.dir/spielfeld.cpp.obj	92b4249d5646f009
+2761	4739	7436395731250579	tictactoe.exe	4599dbd3dc8355ee
+3	403	7436422368487027	CMakeFiles/tictactoe.dir/main.cpp.obj	d417d7d7d0b49312
+403	526	7436422369708138	tictactoe.exe	4599dbd3dc8355ee
+3	383	7436423777515103	CMakeFiles/tictactoe.dir/main.cpp.obj	d417d7d7d0b49312
+383	519	7436423778866328	tictactoe.exe	4599dbd3dc8355ee
+3	336	7436425866480364	CMakeFiles/tictactoe.dir/main.cpp.obj	d417d7d7d0b49312
+337	427	7436425867371074	tictactoe.exe	4599dbd3dc8355ee
+3	333	7436426865149623	CMakeFiles/tictactoe.dir/main.cpp.obj	d417d7d7d0b49312
+333	422	7436426866020425	tictactoe.exe	4599dbd3dc8355ee
