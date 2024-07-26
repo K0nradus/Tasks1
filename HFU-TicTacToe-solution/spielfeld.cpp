@@ -34,69 +34,82 @@ void Spielfeld::setze(int y, int x, Spieler spieler) {
     }
 }
 
-Spielfeld::Spielstand Spielfeld::spielstand() {
-    if (hatGewonnen(Spieler_O)) {
-        return Gewinn_O;
-    } else if (hatGewonnen(Spieler_X)) {
-        return Gewinn_X;
-    } else if (alleFelderBelegt()) {
-        return Unentschieden;
-    } else {
-        return Offen;
-    }
-}
 
-bool Spielfeld::hatGewonnen(Spieler spieler) {
+
+Spielfeld::Spielstand Spielfeld ::hatGewonnen() {
+    //Pruefe draw
+        if (alleFelderBelegt()){
+            return Unentschieden;
+        }
     /* Prüfe auf vollständige Reihe */
-    for (int y = 0; y < 3; y++) {
-        if (ganzeReihe(y, spieler)) {
-            return true;
+        for (int y = 0; y < 3;y++){
+         if (belegung[y][0] == belegung[y][1] &&
+            belegung[y][0] == belegung[y][2] &&
+            belegung[y][0] == Markierung_X   &&
+            belegung[y][0] != Leer) {
+                return Gewinn_X;
         }
-    }
+        }
+        for(int y = 0;y <3;y++){
+         if (belegung[y][0] == belegung[y][1] &&
+            belegung[y][0] == belegung[y][2] &&
+            belegung[y][0] == Markierung_O   &&
+            belegung[y][0] != Leer) {
+                return Gewinn_O;
+            }
+        }
+
     /* Prüfe auf vollständige Spalte */
-    for (int x = 0; x < 3; x++) {
-        if (ganzeSpalte(x, spieler)) {
-            return true;
+        for(int x = 0;x < 3;x++){
+         if (belegung[0][x] == belegung[1][x] &&
+            belegung[0][x] == belegung[2][x] &&
+            belegung[0][x] == Markierung_X   &&
+            belegung[0][x] != Leer) {
+            return Gewinn_X;
         }
-    }
+        }
+        for(int x = 0;x < 3;x++) {
+            if (belegung[0][x] == belegung[1][x] &&
+                belegung[0][x] == belegung[2][x] &&
+                belegung[0][x] == Markierung_O &&
+                belegung[0][x] != Leer) {
+                return Gewinn_O;
+            }
+        }
+
 
     /* Prüfe erste Diagonale */
-    if (belegung[0][0] == (Markierung)spieler &&
-        belegung[1][1] == (Markierung)spieler &&
-        belegung[2][2] == (Markierung)spieler) {
-        return true;
+        if (belegung[0][0] == belegung[1][1] &&
+        belegung[0][0] == belegung[2][2] &&
+        belegung[0][0] == Markierung_X   &&
+        belegung[0][0] != Leer){
+            return Gewinn_X;
     }
-
-    /* Prüfe zweite Diagonale */
-    if (belegung[2][0] == (Markierung)spieler &&
-        belegung[1][1] == (Markierung)spieler &&
-        belegung[0][2] == (Markierung)spieler) {
-        return true;
+        else if (belegung[0][0] == belegung[1][1] &&
+         belegung[0][0] == belegung[2][2] &&
+         belegung[0][0] == Markierung_O   &&
+         belegung[0][0] != Leer){
+        return Gewinn_O;
     }
-
-    /* Die Markierung hat noch nicht gewonnen */
-    return false;
-}
-
-bool Spielfeld::ganzeReihe(int y, Spieler spieler) {
-    for (int x = 0; x < 3; x++) {
-        if (belegung[y][x] != (Markierung)spieler) {
-            return false;
+        /* zweite Diagonale*/
+        else if(belegung[2][0] == belegung[1][1] &&
+         belegung[2][0] == belegung[0][2] &&
+         belegung[2][0] == Markierung_O   &&
+         belegung[2][0] != Leer){
+            return Gewinn_O;
+        }else if(belegung[2][0] == belegung[1][1] &&
+         belegung[2][0] == belegung[0][2] &&
+         belegung[2][0] == Markierung_X   &&
+         belegung[2][0] != Leer){
+            return Gewinn_X;
         }
-    }
-
-    return true;
-}
-
-bool Spielfeld::ganzeSpalte(int x, Spieler spieler) {
-    for (int y = 0; y < 3; y++) {
-        if (belegung[y][x] != (Markierung)spieler) {
-            return false;
+        else {
+            return Offen;
         }
-    }
 
-    return true;
+
 }
+
 
 bool Spielfeld::alleFelderBelegt() {
     for (int y = 0; y < 3; y++) {
@@ -109,7 +122,18 @@ bool Spielfeld::alleFelderBelegt() {
 
     return true;
 }
-
+bool Spielfeld::weiterspielen(char zustimmungsEingabe) {
+    if (zustimmungsEingabe == 'y'){
+        return true;
+    }
+    if (zustimmungsEingabe == 'n'){
+        cout << "Danke fuer's Spielen!";
+        return false;
+    }
+    else {
+        cout << "Keine gueltige Eingabe!"<< endl;
+    }
+}
 /** Überladener <<-Operator für Spielfeld-Markierungen */
 std::ostream& operator<<(std::ostream& os, Spielfeld::Markierung markierung) {
     os << (char)markierung;

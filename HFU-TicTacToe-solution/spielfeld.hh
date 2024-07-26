@@ -36,7 +36,9 @@ public:
     void setze(int y, int x, Spieler spieler);
 
     /** Prüfe, ob es einen Gewinner gibt */
-    Spielstand spielstand();
+    Spielstand hatGewonnen();
+    /**Pruefe ob weitergespielt werden soll*/
+    bool weiterspielen(char zustimmungsEingabe);
 private:
     /** Belegung des Spielfelds
      * belegung[y][x]: Zeile y, Spalte x
@@ -44,7 +46,7 @@ private:
     Markierung belegung[3][3];
 
     /** Prüfe, ob der angegebene Spieler gewonnen hat */
-    bool hatGewonnen(Spieler spieler);
+
 
     /** Prüfe, ob der gegebene Spieler die ganze Reihe belegt hat */
     bool ganzeReihe(int y, Spieler spieler);
