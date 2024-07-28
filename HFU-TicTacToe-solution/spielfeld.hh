@@ -5,6 +5,11 @@
 
 class Spielfeld {
 public:
+    struct AiMove{
+        int y;
+        int x;
+        int bestScore;
+    };
     enum Markierung {
         Leer = '.',
         Markierung_X = 'X',
@@ -38,21 +43,21 @@ public:
     /** Prüfe, ob es einen Gewinner gibt */
     Spielstand hatGewonnen();
     /**Pruefe ob weitergespielt werden soll*/
-    bool weiterspielen(char zustimmungsEingabe);
+    char weiterspielen(char Zustimmung);
+    Markierung belegung[3][3];
 private:
     /** Belegung des Spielfelds
      * belegung[y][x]: Zeile y, Spalte x
      */
-    Markierung belegung[3][3];
+
 
     /** Prüfe, ob der angegebene Spieler gewonnen hat */
 
 
     /** Prüfe, ob der gegebene Spieler die ganze Reihe belegt hat */
-    bool ganzeReihe(int y, Spieler spieler);
 
     /** Prüfe, ob der gegebene Spieler die ganze Spalte belegt hat */
-    bool ganzeSpalte(int x, Spieler spieler);
+
 
     /** Prüfe, ob alle Felder belegt sind */
     bool alleFelderBelegt();

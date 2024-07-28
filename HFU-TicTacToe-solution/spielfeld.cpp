@@ -4,6 +4,7 @@
 /* Macht das Tippen leichter */
 using namespace std;
 
+
 Spielfeld::Spielfeld() {
     /* Initialisiere Spielfeld */
     for (int x = 0; x < 3; x++) {
@@ -122,16 +123,23 @@ bool Spielfeld::alleFelderBelegt() {
 
     return true;
 }
-bool Spielfeld::weiterspielen(char zustimmungsEingabe) {
-    if (zustimmungsEingabe == 'y'){
-        return true;
+char Spielfeld::weiterspielen(char Zustimmung) {
+    if (Zustimmung == 'y'){
+        return 'y';
     }
-    if (zustimmungsEingabe == 'n'){
+    if(Zustimmung == 'h'){
+        return 'h';
+    }
+    if (Zustimmung == 'n'){
         cout << "Danke fuer's Spielen!";
-        return false;
+        return 'n';
+    }
+    if (Zustimmung == 'a'){
+        return 'a';
     }
     else {
         cout << "Keine gueltige Eingabe!"<< endl;
+        return 'z';
     }
 }
 /** Überladener <<-Operator für Spielfeld-Markierungen */
@@ -145,3 +153,6 @@ std::ostream& operator<<(std::ostream& os, Spielfeld::Spieler spieler) {
     os << (char)spieler;
     return os;
 }
+
+
+
