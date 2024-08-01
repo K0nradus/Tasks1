@@ -1,0 +1,12 @@
+public class CounterTester {
+	
+	public static void main(String[] args) {
+		Counter a = new Counter();
+		for (int i = 0; i < 5; i++){
+		a.increment();
+		a.increment();
+		a.decrement();
+}
+}
+}
+
