@@ -111,38 +111,34 @@ Spielfeld::Spieler andererSpieler(Spielfeld::Spieler spieler) {
 }
 
 int main() {
-    int winsX = 0, winsO = 0;
+    int winsX = 0, winsO = 0, countMoves = 0, winsXai = 0, winsOai = 0;
     Spielfeld spielfeld;
     Spielfeld::Spieler aktuellerSpieler = Spielfeld::Spieler_X;
-     char zustimmungAi;
-     char zustimmungLoop = 'y';
-     cout << "Wollt ihr ein Spiel gegen Menschen oder  AI spielen ? (h/a)" << endl;
-        cin >> zustimmungAi;
-        if (zustimmungAi != 'a' && zustimmungAi != 'h') {
-            while (zustimmungAi != 'a' && zustimmungAi != 'h') {
-                cout << "Keine gueltige Eingabe! Versuche es erneut!" << endl;
-                cin >> zustimmungAi;
-            }
+    char zustimmungAi;
+    char zustimmungLoop = 'y';
+    cout << "Wollt ihr ein Spiel gegen Menschen oder  AI spielen ? (h/a)" << endl;
+    cin >> zustimmungAi;
+    if (zustimmungAi != 'a' && zustimmungAi != 'h') {
+        while (zustimmungAi != 'a' && zustimmungAi != 'h') {
+            cout << "Keine gueltige Eingabe! Versuche es erneut!" << endl;
+            cin >> zustimmungAi;
         }
+    }
     /* Führe so lange fort, wie der Spielstand offen ist */
-    while(spielfeld.weiterspielen(zustimmungLoop)== 'y') {
-        if(zustimmungAi == 'a'){
-            aktuellerSpieler = Spielfeld::Spieler_X;
-        }
-        if(spielfeld.hatGewonnen()==Spielfeld::Gewinn_X && zustimmungAi == 'h'){
+    spielfeld = Spielfeld();
+    while ((spielfeld.hatGewonnen()) == Spielfeld::Offen &&
+            (spielfeld.weiterspielen(zustimmungAi) == 'a' ||
+           spielfeld.weiterspielen(zustimmungAi) == 'h') &&
+           spielfeld.weiterspielen(zustimmungLoop) == 'y'){
+        if (spielfeld.hatGewonnen() == Spielfeld::Gewinn_X && zustimmungAi == 'h') {
             aktuellerSpieler = Spielfeld::Spieler_O;
-        }
-        else if(spielfeld.hatGewonnen()==Spielfeld::Gewinn_O && zustimmungAi == 'h'){
+        } else if (spielfeld.hatGewonnen() == Spielfeld::Gewinn_O && zustimmungAi == 'h') {
+            aktuellerSpieler = Spielfeld::Spieler_X;
+        } else if (spielfeld.hatGewonnen() == Spielfeld::Unentschieden) {
             aktuellerSpieler = Spielfeld::Spieler_X;
         }
-        else if(spielfeld.hatGewonnen()==Spielfeld::Unentschieden){
-            aktuellerSpieler = Spielfeld::Spieler_X;
-        }
-        spielfeld = Spielfeld();
-        while ((spielfeld.hatGewonnen()) == Spielfeld::Offen &&
-                spielfeld.weiterspielen(zustimmungAi)== 'a' &&
-                spielfeld.weiterspielen(zustimmungLoop) == 'y')  {
-            if(aktuellerSpieler == Spielfeld::Spieler_X) {
+        if (zustimmungAi == 'a') {
+            if (aktuellerSpieler == Spielfeld::Spieler_X) {
                 /* Zeige Spielfeld */
                 spielfeld.zeige(cout);
                 /* Zeige Spieler */
@@ -159,6 +155,7 @@ int main() {
                     if (spielfeld.feldIstLeer(y, x)) {
                         /* Feld ist leer => Setze es und wechsle Spieler */
                         spielfeld.setze(y, x, aktuellerSpieler);
+                        countMoves++;
                         aktuellerSpieler = andererSpieler(aktuellerSpieler);
                     } else {
                         cout << "Dieses Feld ist schon belegt!" << endl;
@@ -168,18 +165,13 @@ int main() {
                     cout << "Ein Feld besteht aus einem Buchstaben (A-C) gefolgt von einer Ziffer (1-3)!" << endl;
                     cout << "Versuche es noch einmal!" << endl;
                 }
-            }
-            else {
-            aiMove bestMove = findBestMove(spielfeld);
-            spielfeld.setze(bestMove.y,bestMove.x,Spielfeld::Spieler_O);
+            } else {
+                aiMove bestMove = findBestMove(spielfeld);
+                spielfeld.setze(bestMove.y, bestMove.x, Spielfeld::Spieler_O);
+                countMoves++;
                 aktuellerSpieler = andererSpieler(aktuellerSpieler);
             }
-        }
-
-
-        while ((spielfeld.hatGewonnen()) == Spielfeld::Offen &&
-                spielfeld.weiterspielen(zustimmungAi)== 'h'&&
-                spielfeld.weiterspielen(zustimmungLoop) == 'y'){
+        } else if (zustimmungAi == 'h') {
             /* Zeige Spielfeld */
             spielfeld.zeige(cout);
             /* Zeige Spieler */
@@ -187,7 +179,7 @@ int main() {
             /* Frage Feld ab */
             cout << "Waehle ein Feld! (z.B. A3)" << endl;
             string eingabe;
-           cin >> eingabe;
+            cin >> eingabe;
 
             /* Prüfe Feld */
             int x, y;
@@ -196,6 +188,7 @@ int main() {
                 if (spielfeld.feldIstLeer(y, x)) {
                     /* Feld ist leer => Setze es und wechsle Spieler */
                     spielfeld.setze(y, x, aktuellerSpieler);
+                    countMoves++;
                     aktuellerSpieler = andererSpieler(aktuellerSpieler);
                 } else {
                     cout << "Dieses Feld ist schon belegt!" << endl;
@@ -206,32 +199,75 @@ int main() {
                 cout << "Versuche es noch einmal!" << endl;
             }
 
+        } if(zustimmungAi == 'a') {
+            switch (spielfeld.hatGewonnen()) {
+                case Spielfeld::Gewinn_X:
+                    spielfeld.zeige(cout);
+                    winsXai++;
+                    cout << "X hat gewonnen!" << endl
+                         << "X hat " << winsXai << " Spiele gewonnen!" << endl
+                         << "AI hat " << winsOai << " Spiele gewonnen!" << endl;
+                    break;
+                case Spielfeld::Gewinn_O:
+                    spielfeld.zeige(cout);
+                    winsOai++;
+                    cout << "O hat gewonnen!" << endl
+                         << "AI hat " << winsOai << " Spiele gewonnen!" << endl
+                         << "X hat " << winsXai << " Spiele gewonnen!" << endl;
+                    break;
+                case Spielfeld::Unentschieden:
+                    spielfeld.zeige(cout);
+                    cout << "Unentschieden!" << endl
+                         << "X hat " << winsXai << " Spiele gewonnen!" << endl
+                         << "AI hat " << winsOai << " Spiele gewonnen!" << endl;
+                    break;
+            }
+        }
+        else if(zustimmungAi == 'h'){
+            switch (spielfeld.hatGewonnen()) {
+                case Spielfeld::Gewinn_X:
+                    spielfeld.zeige(cout);
+                    winsX++;
+                    cout << "X hat gewonnen!" << endl
+                         << "X hat " << winsX << " Spiele gewonnen!" << endl
+                         << "O hat " << winsO << " Spiele gewonnen!" << endl;
+                    break;
+                case Spielfeld::Gewinn_O:
+                    spielfeld.zeige(cout);
+                    winsO++;
+                    cout << "O hat gewonnen!" << endl
+                         << "O hat " << winsO << " Spiele gewonnen!" << endl
+                         << "X hat " << winsX << " Spiele gewonnen!" << endl;
+                    break;
+                case Spielfeld::Unentschieden:
+                    spielfeld.zeige(cout);
+                    cout << "Unentschieden!" << endl
+                         << "X hat " << winsX << " Spiele gewonnen!" << endl
+                         << "O hat " << winsO << " Spiele gewonnen!" << endl;
+                    break;
+            }
         }
 
-        switch (spielfeld.hatGewonnen()) {
-            case Spielfeld::Gewinn_X:
-                spielfeld.zeige(cout);
-                winsX++;
-                cout << "X hat gewonnen!" << endl
-                     << "X hat " << winsX << " Spiele gewonnen!" << endl
-                     << "O hat " << winsO << " Spiele gewonnen!" << endl;
-                break;
-            case Spielfeld::Gewinn_O:
-                spielfeld.zeige(cout);
-                winsO++;
-                cout << "O hat gewonnen!" << endl
-                     << "O hat " << winsO << " Spiele gewonnen!" << endl
-                     << "X hat " << winsX << " Spiele gewonnen!" << endl;
-                break;
-            case Spielfeld::Unentschieden:
-                spielfeld.zeige(cout);
-                cout << "Unentschieden!" << endl
-                     << "X hat " << winsX << " Spiele gewonnen!" << endl
-                     << "O hat " << winsO << " Spiele gewonnen!" << endl;
-                break;
-        }
-     cout << "Wollt ihr nochmal spielen? (y/n)" << endl;
+
+
+
+        if (spielfeld.hatGewonnen() != Spielfeld::Offen){
+            countMoves = 0;
+            spielfeld = Spielfeld();
+        cout << "Wollt ihr nochmal spielen? (y/n)" << endl;
         cin >> zustimmungLoop;
+        if (zustimmungLoop == 'y'){
+        cout << "Gegen AI oder Menschen? (a/h)" << endl;
+        cin >> zustimmungAi;
+        if (zustimmungAi != 'a' && zustimmungAi != 'h') {
+            while (zustimmungAi != 'a' && zustimmungAi != 'h') {
+                cout << "Keine gueltige Eingabe! Versuche es erneut!" << endl;
+                cin >> zustimmungAi;
+            }
+        }
+        }
+    }
+
     }
     return 0;
 }
