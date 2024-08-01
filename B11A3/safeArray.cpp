@@ -8,13 +8,17 @@ void safe_array::initialize() {
         isInitialized = true;
 }
 void safe_array::arrayEnlarger(unsigned int newsize){
-    safe_array EnlargedArray = safe_array(newsize);
+    int *tempArray= new int[newsize];
+    for(int i = 0; i < newsize; i++){
+        tempArray[i] = defaultValue;
+    }
     for(int i = 0; i < arraySize;i++){
         if(array[i] != defaultValue){
-            EnlargedArray.setAt(i,array[i]);
+            tempArray[i] = array[i];
         }
     }
-    array = EnlargedArray.array;
+    delete[] array;
+    array = tempArray;
     arraySize = newsize;
 }
 

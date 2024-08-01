@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/B11A3.dir/main.cpp.o CMakeFiles/B11A3.dir/safeArray.cpp.o -o B11A3 

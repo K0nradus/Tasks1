@@ -17,6 +17,8 @@ public:
 
     bool fill(unsigned int,unsigned int, int);
 
+    void printArray();
+
     safe_array(unsigned int arraySize){
         this->arraySize = arraySize;
         array = new int[arraySize];
