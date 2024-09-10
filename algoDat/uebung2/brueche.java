@@ -22,7 +22,7 @@ public class brueche {
             x *= bruchToBeAdded.y;
             bruchToBeAdded.erweitern(temp);
             x += bruchToBeAdded.x;
-            if (ggt(x, y) > 1) {
+            if (ggt(x, y) > 1) {  //kürzen
                 int ggt = ggt(x, y);
                 x /= ggt;
                 y /= ggt;

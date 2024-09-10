@@ -2,11 +2,11 @@ public class RestrictedCounter extends Counter{
 
 	private int counterMaxCapacity;
 	public RestrictedCounter(int counterCapacity) {
-		super();
+		//super();
 		counterMaxCapacity = counterCapacity;	
 }
 	public void increment(){
-		if ( get() < counterMaxCapacity)
+		if (get() < counterMaxCapacity)
 			super.increment();
 		else 
 			System.out.println("max capacity reached");
