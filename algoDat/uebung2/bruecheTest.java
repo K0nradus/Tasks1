@@ -28,7 +28,7 @@ public class bruecheTest {
             z.add(a);
             System.out.println("z" + (i + 1) + " = " + z.get());
         }
-        brueche e = e(7);
+        brueche e = e(4);
         System.out.println("e = " + e.get());
     }
 }
