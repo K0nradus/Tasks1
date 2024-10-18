@@ -20,6 +20,6 @@ public class PowerFunctionsTest {
         }
         System.out.println("average exponent power = "+avgExponent(sumExponents,totalLoops));
         System.out.println("average multiplications power = "+avgMultiplications(PowerFunctions.getCountPower(),totalLoops));
-        System.out.println("average multiplications fastPower = "+ avgMultiplications(PowerFunctions.getCountFastPower(),totalLoops));
+        System.out.println("average multiplications fastPower = "+avgMultiplications(PowerFunctions.getCountFastPower(),totalLoops));
     }
 }
