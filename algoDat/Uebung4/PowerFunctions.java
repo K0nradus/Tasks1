@@ -1,9 +1,20 @@
-import java.util.*;
-
 public class PowerFunctions {
 
     private static Counter countPower = new Counter();
     private static Counter countFastPower = new Counter();
+
+    public static void resetCounters(){
+        countPower.reset();
+        countFastPower.reset();
+    }
+
+    public static int getCountPower(){
+        return countPower.get();
+    }
+
+     public static int getCountFastPower(){
+        return countFastPower.get();
+    }
 
     public static double power(double x, int n) {
         double temp = x;
@@ -26,16 +37,5 @@ public class PowerFunctions {
             }
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-        double x = 2;
-        int n = 5;
-        double y = PowerFunctions.power(x, n);
-        double z = PowerFunctions.fastPower(x, n);
-        System.out.println(y);
-        System.out.println(countPower.get());
-        System.out.println(z);
-        System.out.println(countFastPower.get());
     }
 }
