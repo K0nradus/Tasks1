@@ -3,16 +3,16 @@ public class PowerFunctions {
     private static Counter countPower = new Counter();
     private static Counter countFastPower = new Counter();
 
-    public static void resetCounters(){
+    public static void resetCounters() {
         countPower.reset();
         countFastPower.reset();
     }
 
-    public static int getCountPower(){
+    public static int getCountPower() {
         return countPower.get();
     }
 
-     public static int getCountFastPower(){
+    public static int getCountFastPower() {
         return countFastPower.get();
     }
 
@@ -33,7 +33,6 @@ public class PowerFunctions {
             countFastPower.increment();
             if (binaryExponent.charAt(i) == '1') {
                 result = result * x;
-                countFastPower.increment();
             }
         }
         return result;
