@@ -4,13 +4,11 @@ public class Sortierungsbeispiel {
         brueche[] b = new brueche[8];
         for (int i = 0; i < 8; i++){
             double help = Math.random();
-            int zaehler = (int) (10*help) + 1;
+            int zaehler = (int) (10*help)+1;
             double help2 = Math.random();
-            int nenner = (int) (10*help2) + 1;
+            int nenner = (int) (10*help2)+1 ;
             brueche randomBruch = new brueche(zaehler,nenner);
             b[i] = randomBruch;
-            //brueche test= new brueche(1,0);
-            //System.out.println("test = "+ test.get());
         }
         SortierungComparable.mergesort(b);
         Sortierung.mergesort(a);
