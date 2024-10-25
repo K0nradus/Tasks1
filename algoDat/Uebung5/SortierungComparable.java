@@ -1,8 +1,4 @@
 import java.util.Arrays;
-
-
-
-
 public class SortierungComparable{
 
     public static void mergesort(Comparable[] arrayToBeSorted) {

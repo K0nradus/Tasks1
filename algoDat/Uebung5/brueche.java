@@ -1,11 +1,16 @@
 public class brueche implements Comparable<brueche> {
 
-    private int x;
-    private int y;
+    private Integer x;
+    private Integer y;
 
     public brueche(int zaehler, int nenner) {
         x = zaehler;
         y = nenner;
+        if (nenner == 0) {
+            y = null;
+            System.out.println("Stop dividing by zero moron!");
+        }
+
     }
     public int compareTo(brueche bruchToCompare){
         if (((double)x/(double)y) > ((double) bruchToCompare.x/ (double)bruchToCompare.y)){
