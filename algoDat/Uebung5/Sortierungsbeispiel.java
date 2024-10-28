@@ -20,7 +20,7 @@ public class Sortierungsbeispiel {
         System.out.println();
 
         for (int i = 0; i < b.length;i++){
-            System.out.print(b[i].getDecimalNumber()+ " " +b[i].get()+ " ");
+            System.out.print(b[i].getDecimalNumber()+ "=" +b[i].get()+ " ");
         }
     }
     }

@@ -43,7 +43,7 @@ public class Anwendungsbeispiel {
                totalSFR += geld[j].getWert();
            }
        }
-       System.out.println("Total EUR: " +totalEUR+" Total USD: "+ totalUSD+ " Total SFR: "+ totalSFR);
+       System.out.println("Total EUR: " +totalEUR+" \nTotal USD: "+ totalUSD+ " \nTotal SFR: "+ totalSFR);
        double totalWeight = 0, totalArea = 0, coinTower = 0; // ermittelt gesamt Gewicht, gesamt Area, Muenzstapel
        for (int j = 0; j< geld.length;j++){
            if(geld[j] instanceof Muenze){
@@ -53,8 +53,9 @@ public class Anwendungsbeispiel {
                totalArea += (((Schein) geld[j]).getBreite() /10) * (((Schein) geld[j]).getLaenge() / 10);
            }
        }
-       System.out.println("Weight coins: "+ totalWeight+ " gramms. " + " Area notes: "+totalArea+ " squarecms.\n" + "Height coin tower: " + coinTower+" cm.");
+       System.out.println("Weight coins: "+ totalWeight+ " gramms. " + "\nArea notes: "+totalArea+ " squarecms.\n" + "Height coin tower: " + coinTower+" cm.");
        SortierungComparable.mergesort(geld);
+       System.out.print("Currency sorted by value: ");
        for(int j = 0; j< geld.length;j++){
            System.out.print(geld[j].getWert()+ " ");
        }
