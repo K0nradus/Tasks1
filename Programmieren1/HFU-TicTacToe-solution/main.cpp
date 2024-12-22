@@ -2,8 +2,9 @@
 #include <string>
 #include <limits>
 #include <vector>
-
+#include "spielfeld.cpp"
 #include "spielfeld.hh"
+
 
 struct aiMove{
     int y;
